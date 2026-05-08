@@ -1,0 +1,51 @@
+{
+  "scenario": "Invalid Input Case",
+  "description": "Demonstrates input validation. All of the following inputs should be REJECTED by the system.",
+  "test_inputs": [
+    {
+      "error_type": "Duplicate Process ID",
+      "input": [
+        { "pid": "P1", "arrival_time": 0, "burst_time": 5 },
+        { "pid": "P1", "arrival_time": 2, "burst_time": 3 }
+      ],
+      "quantum": 2,
+      "expected_error": "Duplicate Process ID 'P1' detected."
+    },
+    {
+      "error_type": "Negative Arrival Time",
+      "input": [
+        { "pid": "P1", "arrival_time": -2, "burst_time": 5 }
+      ],
+      "quantum": 2,
+      "expected_error": "Arrival Time cannot be negative."
+    },
+    {
+      "error_type": "Zero Burst Time",
+      "input": [
+        { "pid": "P1", "arrival_time": 0, "burst_time": 0 }
+      ],
+      "quantum": 2,
+      "expected_error": "Burst Time must be greater than 0."
+    },
+    {
+      "error_type": "Invalid Quantum",
+      "input": [
+        { "pid": "P1", "arrival_time": 0, "burst_time": 5 }
+      ],
+      "quantum": -1,
+      "expected_error": "Quantum must be greater than 0."
+    },
+    {
+      "error_type": "Missing Process ID",
+      "input": [
+        { "pid": "", "arrival_time": 0, "burst_time": 5 }
+      ],
+      "quantum": 3,
+      "expected_error": "Process ID cannot be empty."
+    }
+  ],
+  "validation_levels": {
+    "client_side": "JavaScript pre-validates before form submission (duplicate PIDs, negative values, zero burst, invalid quantum).",
+    "server_side": "PHP Validator class re-validates all POST data independently for security."
+  }
+}
