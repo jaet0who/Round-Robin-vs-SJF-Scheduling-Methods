@@ -22,6 +22,16 @@ A full-stack web application comparing **Round Robin (RR)** and **Shortest Job F
 
 ---
 
+## 🔗 Live Demo
+ [Click Here to Try the System](https://cpuscheduling.infinityfreeapp.com/results.php)
+
+---
+
+## 📄 Documentation
+ [Click Here for Full Documentation](https://1drv.ms/w/c/ac08f163835388f3/IQDFZOf3bimlS4S61oGGVnlbAR_6gJ8Q6dC7E_Y82PRSsXk?e=pkZdd1)
+
+---
+
 ## Project Structure
 
 ```
@@ -213,3 +223,14 @@ Both **JavaScript** (client-side) and **PHP** (server-side) validate independent
 ## Author Notes
 
 This system was built as a comprehensive demonstration of CPU scheduling algorithm comparison. Every line of scheduling logic is hand-coded — no third-party algorithm libraries are used. The RR and SJF implementations follow standard OS textbook definitions (Silberschatz, "Operating System Concepts").
+
+---
+
+## 👥 Team Members
+- Yasmin Abdelhalim Ibrahim  
+- Nour Karamallah Mahmoud Galal  
+- Jana Alaaeldin Ahmed  
+- Norhan Sabry Ramadan  
+- Manar Makawy Gab Allah  
+- Marwan Mohsen Sayed  
+- Amr Mohamed Ayman  
